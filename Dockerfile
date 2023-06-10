@@ -6,4 +6,4 @@ RUN curl -sSL -o /tmp/whoami.tar.gz https://github.com/traefik/whoami/releases/d
 	tar -C /usr/bin -xf /tmp/whoami.tar.gz whoami && \
 	rm -f /tmp/whoami.tar.gz
 
-CMD ["whoami"]
+ENTRYPOINT ["whoami"]
